@@ -24,5 +24,5 @@ public class ChatMessage {
     public static void deleteCount(){
         countOnline -= 1;
     }
-    public void setEx(){previousOnline = countOnline;}
+    public void previousOnlineCount(){previousOnline = countOnline;}
 }

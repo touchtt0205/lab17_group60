@@ -19,7 +19,7 @@ public class chatController {
     public ChatMessage addUser(ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         ChatMessage.addCount();
-        chatMessage.setEx();
+        chatMessage.previousOnlineCount();
         return chatMessage;
     }
 }
