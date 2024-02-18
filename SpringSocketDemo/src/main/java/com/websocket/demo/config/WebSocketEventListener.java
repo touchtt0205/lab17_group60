@@ -18,7 +18,6 @@ public class WebSocketEventListener {
     public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) {
         StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
         String username = (String) headerAccessor.getSessionAttributes().get("username");
-//        ChatMessage.deleteCount();
         ChatMessage.deleteCount();
         int previous;
         previous = ChatMessage.getCountOnline();
