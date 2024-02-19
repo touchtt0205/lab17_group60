@@ -15,9 +15,6 @@ public class ChatMessage {
     private String sender;
     private MessageType type;
 
-    public static void Count(int i){
-        countOnline += i;
-    }
     public static void addCount(){
             countOnline += 1;
     }
